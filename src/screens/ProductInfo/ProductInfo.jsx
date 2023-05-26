@@ -89,7 +89,7 @@ const ProductDetails = () => {
         <Grid xs={6} md={8}>
               <Item><div>
                
-                <img src={avatar} alt='photo' width={211} height={294} /></div>
+                <img src={avatar} alt='phot' width={211} height={294} /></div>
                 <div>
                   <p>Опис:  {description}</p>
                   </div>
