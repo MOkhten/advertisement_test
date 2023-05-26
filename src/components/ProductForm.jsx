@@ -434,7 +434,10 @@ const [payments, setPayments] = useState('');
         />
            
               </div>
-              <><AddButton type="submit"  > Зберігти і вийти</AddButton>
+              <>
+                
+                  <AddButton type="submit"  > Зберігти</AddButton>
+                  
                 <Link to={`/products`}>
               < BackButton> Назад</BackButton>
                 </Link></>

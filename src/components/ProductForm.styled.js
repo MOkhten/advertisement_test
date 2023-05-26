@@ -37,6 +37,7 @@ font-weight: 600;
 font-size: 14px;
 line-height: 148%;
 color: #1A141F;
+margin-left: 10px;
 `
 
 export const AddButton = styled.button`
