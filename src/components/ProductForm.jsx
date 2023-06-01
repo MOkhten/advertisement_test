@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import {  useState } from 'react';
 import { useDispatch} from 'react-redux';
-import {  addProduct } from 'redux/user/operations';
+import { addProduct } from 'redux/user/operations';
 import {  ListContainer, InfoContainer } from '../screens/Product/Product.styled';
 import {  Form, ProductTitle, Title, AddButton, BackButton } from './ProductForm.styled'; 
 import FormControl from '@mui/material/FormControl';
@@ -92,31 +92,56 @@ const [payments, setPayments] = useState('');
    }
   };
 
+  const reset = () => {
+    setName('');
+    setNumber('');
+    setId('');
+    setPreCategory('');
+    setSample('');
+    setPrice('');
+    setDiscount('');
+    setManufacturer('');
+    setCountry('');
+    setDelivery('');
+    setPayments('');
+    setSort('');
+    setClasification('');
+    setField('');
+    setPackadge('');
+    setType('');
+    setWeight('');
+    setDescription('');
+  };
+
    const handleSubmit = e => {
-    e.preventDefault();
-    dispatch(
-        addProduct({
-          name,
-          category,
-          id,
-          preCategory,
-          sample,
-          price,
-          discount,
-          manufacturer,
-          country,
-          delivery,
-          payments,
-          sort,
-          clasification,
-          field,
-          packadge,
-          type,
-          weight,
-          description
-        })
-     );
+     e.preventDefault();
+
+       dispatch(
+         addProduct({
+           name,
+           category,
+           id,
+           preCategory,
+           sample,
+           price,
+           discount,
+           manufacturer,
+           country,
+           delivery,
+           payments,
+           sort,
+           clasification,
+           field,
+           packadge,
+           type,
+           weight,
+           description
+         })
+       
+       );
+       reset();
      
+    //  window.location.assign('./products');
   };
 
 

@@ -6,10 +6,7 @@ import { Table, Line, Body, Td, Tr, ProductLink, BackLinkHref } from './ProductL
 
 const ProductList = () => {
   const product = useSelector(selectProducts);
-   
   
-  console.log(product);
-
   return (
     <>
     <BackLinkHref to={`/`}>
